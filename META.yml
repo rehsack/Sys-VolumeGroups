@@ -1,0 +1,34 @@
+---
+abstract: 'Retrieve list of volume groups, logical volumes and their properties'
+author:
+  - 'Jens Rehsack <rehsack@cpan.org>'
+build_requires:
+  Test::More: 0.90
+configure_requires:
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3607'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Sys-VolumeGroups
+provides:
+  Sys::VolumeGroups:
+    file: lib/Sys/VolumeGroups.pm
+    version: 0.001
+  Sys::VolumeGroups::AixLvm:
+    file: lib/Sys/VolumeGroups/AixLvm.pm
+    version: 0.001
+  Sys::VolumeGroups::LinuxLvm2:
+    file: lib/Sys/VolumeGroups/LinuxLvm2.pm
+    version: 0.001
+recommends:
+  IPC::Run: 0
+requires:
+  IPC::Cmd: 0
+  IPC::Open3: 0
+  List::MoreUtils: 0.22
+  Module::Pluggable: 3.9
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.001

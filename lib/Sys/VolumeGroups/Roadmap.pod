@@ -1,0 +1,46 @@
+=head1 NAME
+
+Sys::VolumeGroups::Roadmap - high level to do list and targetted goals
+
+=head1 SYNOPSIS
+
+This page provides a high level overview about the future extensions of
+the Sys::VolumeGroups module and the improvements of the module itself.
+
+=head1 EXTENSIONS
+
+=head2 More Targets
+
+Sys::VolumeGroups needs support for a wider range of platforms and volume
+managers as Veritas, SunLVM, FreeBSD's gvinum, NetBSD's CCD or RAIDframe,
+Filesystems with integrated LVM (ZFS, btrfs), HP-UX should
+use something own and so on.
+
+=head2 More Information
+
+Where feasible, additional information like local or remote disks (where
+is the mirror) from SAN systems like IBM DS8000 or HP Storage Works, should
+be provided.
+
+=head1 RESOURCES AND CONTRIBUTIONS
+
+There're several ways how you can help to support future development: You can
+hire the author to implement the features you require at most (this also
+defines priorities), you can negotiate a support and maintenance contract
+with the company of the author and you can provide tests and patches.
+
+=head1 AUTHOR
+
+Jens Rehsack, C<< <rehsack at cpan.org> >>
+
+=head1 LICENSE AND COPYRIGHT
+
+Copyright 2010 Jens Rehsack.
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of either: the GNU General Public License as published
+by the Free Software Foundation; or the Artistic License.
+
+See http://dev.perl.org/licenses/ for more information.
+
+=cut

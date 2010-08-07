@@ -1,0 +1,63 @@
+NAME
+    Sys::VolumeGroups - Retrieve list of volume groups, logical volumes and
+    their properties
+
+SYNOPSIS
+        my $sysvgs = Sys::VolumeGroups->new();
+        my @vgs = $sysvgs->get_physical_volumes();
+        print "Volume groups: ", join( ", ", map { $_->{VOLUME_GROUP} } @vgs ), "\n";
+        my @lvs = $sysvgs->get_logical_volumes();
+        print "Logical volumes: ", join( ", ", map { $_->{LOGICAL_VOLUME} } @lvs ), "\n";
+
+SUBROUTINES/METHODS
+  new
+    Instantiates new Sys::VolumeGroups object. Attributes can be specified
+    for used finder (of type Module::Pluggable::Object). Additionally,
+
+    `only_loaded'
+        Use only plugins which are still loaded.
+
+    can be specified with a true value. This forces to grep `%INC' instead
+    of using Module::Pluggable.
+
+  get_physical_volumes
+  get_logical_volumes
+AUTHOR
+    Jens Rehsack, `<rehsack at cpan.org>'
+
+BUGS
+    Please report any bugs or feature requests to `bug-sys-volumegroups at
+    rt.cpan.org', or through the web interface at
+    http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Sys-VolumeGroups. I will
+    be notified, and then you'll automatically be notified of progress on
+    your bug as I make changes.
+
+SUPPORT
+    You can find documentation for this module with the perldoc command.
+
+        perldoc Sys::VolumeGroups
+
+    You can also look for information at:
+
+    * RT: CPAN's request tracker
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Sys-VolumeGroups
+
+    * AnnoCPAN: Annotated CPAN documentation
+        http://annocpan.org/dist/Sys-VolumeGroups
+
+    * CPAN Ratings
+        http://cpanratings.perl.org/d/Sys-VolumeGroups
+
+    * Search CPAN
+        http://search.cpan.org/dist/Sys-VolumeGroups/
+
+ACKNOWLEDGEMENTS
+LICENSE AND COPYRIGHT
+    Copyright 2010 Jens Rehsack.
+
+    This program is free software; you can redistribute it and/or modify it
+    under the terms of either: the GNU General Public License as published
+    by the Free Software Foundation; or the Artistic License.
+
+    See http://dev.perl.org/licenses/ for more information.
+
