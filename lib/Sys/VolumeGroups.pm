@@ -161,6 +161,17 @@ L<http://search.cpan.org/dist/Sys-VolumeGroups/>
 
 =back
 
+=head1 RESOURCES AND CONTRIBUTIONS
+
+There're several ways how you can help to support future development: You
+can hire the author to implement the features you require at most (this
+also defines priorities), you can negotiate a support and maintenance
+contract with the company of the author and you can provide tests and
+patches. Further, you can submit documentation and links to resources to
+improve or add volume group managers or grant remote access to machines
+with insufficient supported volume managers, file systems with volume
+manager capabilities or storage systems.
+
 =head1 ACKNOWLEDGEMENTS
 
 
